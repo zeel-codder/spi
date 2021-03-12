@@ -17,10 +17,11 @@ body{
 ========================= */
 
 .top-headding{
-    padding:1rem;
-    font-size: 2rem;
+    padding: 1rem;
+    background: rebeccapurple;
+    font-size: 32px;
     text-align: center;
-    height: 5vh;
+    /* /* height: 5vh; */
 }
 
 /* =========================
@@ -32,7 +33,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10vh;
+    /* height: 10vh; */
 }
 
 #navbar ul, #footer ul{
@@ -63,6 +64,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px 0;
     /* border:2px solid; */
 }
 .text{
@@ -158,7 +160,7 @@ h4{
 }
 @media only screen and (max-width: 500px) {
    
-    .top-headding,#navbar a,#footer a,.card-footer,.card-header,.container,.catainer-form label,.catainer-form select,.btn{
+    #navbar a,#footer a,.card-footer,.card-header,.container,.catainer-form label,.catainer-form select,.btn{
         font-size: 12px
     }
     .card-footer,.card-header{
@@ -194,7 +196,8 @@ h4{
     #a{
         width: 7rem;
     }
-    .catainer-form lable{
+    /* .catainer-form label */
+    .catainer-form label{
         width: 10rem;
     }
     .section-box{
@@ -207,16 +210,19 @@ h4{
 @media only screen and (max-width: 300px) {
 
     .catainer-form select{
-        width: 5rem;
+        width: 7rem;
     }
     #a{
-        width: 3rem;
+        width: 7rem;
     }
-    .catainer-form lable{
+    .catainer-form label{
         width: 7rem;
     }
     .section-box{
         width: 15rem;
+        flex-direction: column;
+        align-items: center;
+        /* flex-wrap: wrap; */
     }
     
     #footer a{
