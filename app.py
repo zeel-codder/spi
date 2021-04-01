@@ -1,15 +1,29 @@
 from crypt import methods
 from flask import render_template,Flask,request,redirect
+from flaskext.markdown import Markdown
+import markdown.extensions.fenced_code
 import Spi_Calculator as g
+from pygments.formatters import HtmlFormatter
 import Data as d
 
 
 app = Flask(__name__)
+Markdown(app)
+
 
 
 @app.route("/")
 def Home():
     return render_template("Home.html")
+
+
+@app.route('/about')
+def About():
+    f1=open('./ReadMe.md',"r");
+
+    mkd_text =f1.read()
+    return render_template("about.html",mkd_text=mkd_text);
+
 
 
 @app.route("/branch")
@@ -21,6 +35,8 @@ def Branch():
     return render_template("SPI.html",type=type,branchlist=data_branch,semlist=data_sem,action='/semester')
 
 
+
+
 @app.route("/semester",methods=['POST'])
 def Semester():
     Branch=request.values.get("branch")
@@ -28,6 +44,8 @@ def Semester():
     list_sub=d.Get_Branch_Semester_Sub_List(Branch,Semester)
     type='semester'
     return render_template("SPI.html",type=type,branch=Branch,semester=Semester,sublist=list_sub,action='/SPI')
+
+
 
 @app.route("/SPI",methods=['POST'])
 def SPI():
@@ -45,7 +63,9 @@ def SPI():
     if "F" not in Greadlist:  
         a=g.SPI(list_sub,Greadlist)
     return render_template("SPI.html",type=type,result=a)
-app.run(debug=True)
+
+
+app.run(debug=True,port=2000)
 
 
 
