@@ -15,7 +15,7 @@ SPI CALCULATOR
  
 ## Description
  
-This project is used to find spi of student of nirma university Technology. Currently we have only four breach data so user can only calculate the spi of four branch.
+This project is used to find spi of student of nirma university Technology. Currently we have only four branch data so user can only calculate the spi of four branch.
  
 ### Branches
  
