@@ -2,6 +2,7 @@
 Chemical Engineering-BCH
 Semester-1
 2MA101-Liner Algebra-4
+2PY101-Physics-4
 2CL102-Environment Studies-2
 2CS101-Computer Programming-4
 2EE101-EEEE-4
@@ -15,7 +16,7 @@ Semester-2
 2ME101-Engineering Graphics-4
 2HSB102-English Communication-3
 2ME102-Mechanical Workshop-1
-2SP102-ICT Tools and Cyber Security-1
+2XXXXX-Introduction to XX Engineering-1
 2SP103-CT-0
 2SO104-Yog and Meditation-0
 End
@@ -66,6 +67,7 @@ End
 Civil Engineering-BCL
 Semester-1
 2MA101-Liner Algebra-4
+2PY101-Physics-4
 2CL102-Environment Studies-2
 2CS101-Computer Programming-4
 2EE101-EEEE-4
@@ -79,7 +81,7 @@ Semester-2
 2ME101-Engineering Graphics-4
 2HSB102-English Communication-3
 2ME102-Mechanical Workshop-1
-2SP102-ICT Tools and Cyber Security-1
+2XXXXX-Introduction to XX Engineering-1
 2SP103-CT-0
 2SO104-Yog and Meditation-0
 End
@@ -132,6 +134,7 @@ End
 Electrical Engineering-BEE
 Semester-1
 2MA101-Liner Algebra-4
+2PY101-Physics-4
 2CL102-Environment Studies-2
 2CS101-Computer Programming-4
 2EE101-EEEE-4
@@ -145,7 +148,7 @@ Semester-2
 2ME101-Engineering Graphics-4
 2HSB102-English Communication-3
 2ME102-Mechanical Workshop-1
-2SP102-ICT Tools and Cyber Security-1
+2XXXXX-Introduction to XX Engineering-1
 2SP103-CT-0
 2SO104-Yog and Meditation-0
 End
@@ -199,6 +202,7 @@ End
 Computer Science and Engineering-BCE
 Semester-1
 2MA101-Liner Algebra-4
+2PY101-Physics-4
 2CL102-Environment Studies-2
 2CS101-Computer Programming-4
 2EE101-EEEE-4
@@ -212,7 +216,7 @@ Semester-2
 2ME101-Engineering Graphics-4
 2HSB102-English Communication-3
 2ME102-Mechanical Workshop-1
-2SP102-ICT Tools and Cyber Security-1
+2XXXXX-Introduction to XX Engineering-1
 2SP103-CT-0
 2SO104-Yog and Meditation-0
 End

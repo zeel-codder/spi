@@ -32,7 +32,7 @@ for i in Data_inDic:
             list[i1]=list[i1].split("-")
 import json
 f1.close()
-f1=open("Niram_data.py","w")
+f1=open("tem1.py","w")
 f1.write("DATA=")
 f1.write(json.dumps(Data_inDic))
 f1.close()
