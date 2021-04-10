@@ -1,5 +1,5 @@
 # ===================================
-# This file is used to crate Api of niram per sem semester wise data
+# This file is used to crate Array Of Objects of hiram per sem semester wise data
 # ===================================
 
 f1=open("./static/Nirma_Data.txt","r")

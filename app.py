@@ -1,7 +1,6 @@
 from crypt import methods
 from flask import render_template,Flask,request,redirect
 from flaskext.markdown import Markdown
-import markdown.extensions.fenced_code
 import Spi_Calculator as g
 from pygments.formatters import HtmlFormatter
 import Data as d
