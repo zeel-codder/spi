@@ -1,6 +1,6 @@
 
  
- 
+
 ## PROJECT
  
 SPI CALCULATOR
