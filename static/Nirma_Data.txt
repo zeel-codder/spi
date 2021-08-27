@@ -1,4 +1,3 @@
-
 Chemical Engineering-BCH
 Semester-1
 2MA101-Liner Algebra-4
@@ -42,14 +41,14 @@ Semester-5
 2CH503-Modeling and Simulation-4
 2CHDEXX-Department Elective I-3
 2XXOEXX-Open ElectiveI-3
-UEXXXXX-University Elective-3
+UEXXXXX-Open ElectiveII-3
 End
 Semester-6
 2CH601-Chemical Reaction Engineering I-4
 2CH602-Process Equipment Design-4
 2CHDEXX-Department ElectiveII-3
 2CHDEXX-Department ElectiveIII-3
-2XXOEXX-Open ElectiveII-3
+2XXOEXX-Open ElectiveIII-3
 2HSOEXX-Humanities Elective-3
 End
 Semester-7
@@ -57,8 +56,8 @@ Semester-7
 2CHXXX-Process Technology&Economics-3
 2CHDEXX-Department ElectiveIV-3
 2CHDEXX-Department ElectiveV-3
-2XXOEXX-Open ElectiveIII-3
-2XXOEXX-OpenElectiveIV-3
+2XXOEXX-Open ElectiveIV-3
+2XXOEXX-OpenElectiveV-3
 2CHXXX-Minor Project-2
 End
 Semester-8
@@ -103,30 +102,31 @@ Semester-4
 End
 Semester-5
 2CL501-Design of Concrete Structures-4
-2CL502-Environmental Engineering-4
+2CL502-Water Resources and Irrigation Engineering-4
 2CL503-Foundation Engineering-4
-2CLDEXX-Department ElectiveI-3
-2CLOEXX-Open Elective-3
-UEXXXXX-University Elective-3
-2CL504-Computational Tools and Techniques-1
+2CLDEXX-Computational Techniques-1
+2CLOEXX-Department Elective I-3
+UEXXXXX-Open Elective I-3
+UEXXXXX-Open Elective II-3
 End
 Semester-6
-2CL601-Water Resources and Irrigation Engineering-4
-2CL602-Construction Project Management-4
+2CL601-Humanities courses-3
+2CL602-Design of Steel Structures-4
+2CL602-Environment Engineering-4
 2CLDEXX-Department ElectiveII-3
 2CLDEXX-Department ElectiveIII-3
-2CLOEXX-Open ElectiveII-3
+2CLOEXX-Open ElectiveIII-3
 2HSOEXX-Humanities Elective-3
 2CL603-Construction Workshop-1
 End
 Semester-7
-2CLXXX-7Design of Steel Structures-4
-2CLXXX-Professional Practice-4
+2CLXXX-Estimation and Costing-4
+2CLXXX-Construction Project Management-4
+2CLXXX-Minor Project-2
 2CLDEXX-Department ElectiveIV-3
 2CLDEXX-Department ElectiveV-3
-2XXOEXX-Open ElectiveIII-3
 2XXOEXX-Open ElectiveIV-3
-2CLXXX-Minor Project-2
+2XXOEXX-Open ElectiveV-3
 End
 Semester-8
 2CLXXX-Major Project/Internship-12
@@ -172,28 +172,28 @@ Semester-4
 End
 Semester-5
 2EE501-Rotating AC Machines-4
-2EE502-Electrical Power System Analysis-4
-2EE503-Microprocessor and Microcontrollers-4
+2EE502-Power System Analysis-4
+2EE503-Digital Process and Controllers-4
 2EEDEXX-Department ElectiveI-3
-2XXOEXX-Open ElectiveI-3
-UEXXXXX-University Elective-3
+2XXOEXX-Open ElectiveI(MP)-3
+UEXXXXX-Open ElectiveII(TP)-3
 End
 Semester-6
-2EE601-Power System Protection and Switchgear-4
+2EE601-Power System Operation and Control-3
 2EE602-Electric Drives-3
 2EE603-Electronic System Design Laboratory-1
 2EEDEXX-Department ElectiveII-3
 2EEDEXX-Department ElectiveIII-3
-2XXOEXX-Open ElectiveII-3
-2HSOEXX-Humanities Elective-3
+2XXOEXX-Open ElectiveIII(MP)-3
+2HSOEXX-Elective courses(HSS)-3
 End
 Semester-7
-2EEXXX-Power System Operation and Control-4
+2EEXXX-Power System Protection and Switchgear-4
 2EEXXX-Electrical Machine Design-4
 2EEDEXX-Department ElectiveIV-3
 2EEDEXX-Department ElectiveV-3
-2XXOEXX-Open ElectiveIII-3
-2XXOEXX-Open ElectiveIV-3
+2XXOEXX-Open ElectiveIv(TP)-3
+2XXOEXX-Open ElectiveV(MP)-3
 2EEXXX-Minor Project-2
 End
 Semester-8
@@ -240,26 +240,27 @@ End
 Semester-5
 2CS501-Machine Learning-4
 2CS502-Computer Networks-4
+2CS502-Sofware Engineering-4
 2CS503-Design and Analysis of Algorithms -4
-2EEDEXX-Department ElectiveI-3
-2XXOEXX-Open ElectiveI-3
+2XXOEXX-Open ElectiveIII(Mixed Pool)-3
 2HSOEXX-Humanities Elective-3
 End
 Semester-6
 2CS601-Theory of Computation-4
-2CSDEXX-Department ElectiveI-3
+2CS601-Department Elective I-3
 2CSDEXX-Department ElectiveII-4
 2CSDEXX-Department ElectiveIII-3
-2XXOEXX-Open ElectiveII-3
+2XXOEXX-Open ElectiveI(Mixed Pool)-3
+2XXOEXX-Open ElectiveII(Technical Pool)-3
 UEXXXXX-University Elective-3
 End
 Semester-7
 2CSXXX-Compiler Construction -4
-2CSXXX-Information Security-4
-2CSDEXX-Department ElectiveIV-3
+2CSXXX-Information Security-3
+2CSDEXX-Department ElectiveIV-4
 2CSDEXX-Department ElectiveV-3
-2XXOEXX-Open ElectiveIII-3
 2XXOEXX-Open ElectiveIV-3
+2XXOEXX-Open ElectiveV-3
 2CSXXX-Minor Project-2
 End
 Semester-8

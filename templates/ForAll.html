@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+<div class="container" id="zeel">
+    <div class="text">
+        <div class="card-header" id="zee">
+
+            SPI CALCULATOR
+        </div>
+        <div class="form">
+            <h2 class="gu">Find Spi</h2>
+          
+            <form action={{action}} method="POST" class="catainer-form">
+
+                <div class="section-box div1">
+                    <label for='sublist'>Select Number of Subject</label>
+                    
+                                <select id='sublist3' name='sublist3'>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                   
+                                </select>
+                    
+                    
+                    <a class="btn add" id="sub" onclick="AddItem()">Add Sub</a>
+                </div>
+                <div class="section-box div2 none">
+                    
+                    <button type="submit" class="btn">Go</button>
+                </div>
+            </form>
+        
+        </div>
+        <div class="card-footer" id="gu">
+            Div c
+        </div>
+    </div>
+</div>
+
+<script>
+    let Subject=document.querySelector(".catainer-form")
+    let Add=document.querySelector(".div1")
+    let Go=document.querySelector(".div2")
+    
+
+
+    function AddItem(){
+
+        const count=document.querySelector("#sublist3").value;
+
+        Add.classList.add("none")
+        Go.classList.remove("none")
+
+        let t=''
+
+        for(let i=0;i<count;i++){
+            t+=
+            `   <div class="section-box">
+                <label for='sublist'>Subject  Grade : ${i+1}</label>
+    
+                <select id='sublist' name='sublist'>
+                    <option value="AP">A+</option>
+                    <option value="A">A</option>
+                    <option value="BP">B+</option>
+                    <option value="B">B</option>
+                    <option value="CP">C+</option>
+                    <option value="C">C</option>
+                    <option value="F">F</option>
+                </select>
+                <label for='sublist1'>Subject Credit : ${i+1}</label>
+                <select id='sublist1' name='Grade'>
+                
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+
+            `
+        }
+
+        
+       
+
+        Subject.innerHTML=t+Subject.innerHTML
+
+        
+        console.log(Subject)
+    }
+</script>
+
+
+{% endblock%}

@@ -1,13 +1,5 @@
+
  
-# Nirma Python Project Sem-4
- 
-## Roll no
- 
-19BCE212 - PRAJAPATI ZEEL SURESHBHAI
- 
-19BCE205 - PATHAN AMIRKHAN MUZAFFARKHAN
- 
-19BCE208 - JAYDEEP PIPALIYA
  
 ## PROJECT
  
@@ -87,28 +79,8 @@ python3 app.py
  
 ```
  
-## How to use App:
- 
-# Goto: [Home](https://zeelprajapati123.pythonanywhere.com/)
- 
-![Home Page](./static/img/Home.png)
- 
-# Than Go to Spi
- 
-![Spi Page](./static/img/spi.png)
- 
-# Select Branch and Semester Than Hit Go
- 
-![Grade Page](./static/img/Grade.png)
- 
- 
-# Select Your Grade in Each Subject Than Hit Go
- 
-![Ans Page](./static/img/ans.png)
- 
- 
- 
-## Thank You For Reading Over Doc.
+
+## Thank You For Reading.
  
 # Happy Coding
  

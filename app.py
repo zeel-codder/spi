@@ -64,6 +64,25 @@ def SPI():
     return render_template("SPI.html",type=type,result=a)
 
 
+
+@app.route("/clc")
+def Clc():
+    return render_template("ForAll.html",action="/spi_all")
+
+
+@app.route("/spi_all",methods=['POST'])
+def spi_all():
+    Greadlist=request.form.getlist('sublist')
+    Creadit=request.form.getlist('Grade')
+    print(Greadlist,Creadit)
+    a='Fail'
+    if "F" not in Greadlist:  
+        a=g.SPI(Creadit,Greadlist)
+    return render_template("SPI.html",type="spi",result=a)
+
+    
+
+
 app.run(debug=True,port=2000)
 
 

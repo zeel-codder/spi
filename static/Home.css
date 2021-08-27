@@ -9,8 +9,34 @@ CSS file
 
 body{
     margin: 0px auto;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: -appsle-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
     /* border: 2px solid black; */
+    --bg-box:#000b76;
+    --bg-button:#372e44;
+    --bg:#38434a;
+}
+
+.bg{
+    position: absolute;
+    top: -12%;
+    z-index: -1;
+}
+
+
+
+::-webkit-scrollbar {
+    height: .7rem;
+}
+::-webkit-scrollbar, body::-webkit-scrollbar {
+    width: .7em;
+}
+::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
+    background-color: #a9a9a9;
+    border-radius: 12px;
+}
+::-webkit-scrollbar-track, body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
 }
 /* =========================
 1.Hedder
@@ -18,10 +44,16 @@ body{
 
 .top-headding{
     padding: 1rem;
-    background: rebeccapurple;
+    background: #38434a;
     font-size: 32px;
+    color: white;
+    border-bottom: 1px solid white;
+
     text-align: center;
     /* /* height: 5vh; */
+}
+.card-title{
+    text-transform: capitalize;
 }
 
 /* =========================
@@ -35,20 +67,29 @@ body{
     justify-content: center;
     /* height: 10vh; */
 }
+.gu{
+    text-align: center;
+}
 
-#navbar ul, #footer ul{
+#navbar ul{
     display: flex;
     list-style: none;
     align-items: center;
     padding: 1rem 0;
     width: 100%;
     margin: 0;
-    background-color: black;
+    background-color: var(--bg);
 }
-#navbar a, #footer a{
+#footer{
+    background-color: var(--bg);
+    padding: 1.2rem;
+
+    color: white;
+}
+#navbar a{
     text-decoration: none;
     color: white;
-    background-color: black;
+    /* background-color: black; */
     font-size: 1.3rem;
     padding: 0 1rem;
 }
@@ -64,17 +105,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 0;
+    margin: 2.5rem 0;
     /* border:2px solid; */
+    position: relative;
 }
 .text{
     display: flex;
-    width: 90%;
+    width: 50%;
+    /* padding: 2rem; */
     /* align-self:/ center; */
     /* justify-content: space-between; */
     flex-direction: column;
     /* box-shadow: 0px 0px 10px red; */
-    border: 1px solid red;
+    border: 1px solid var(--bg-box);
+    box-shadow: 0px 0px 1px var(--bg-box);
 }
 .card-header,.card-footer{
     padding: 1rem;
@@ -82,7 +126,7 @@ body{
     font-size: 1.6rem;
     font-weight: bolder;
     text-align: center;
-    background-color: red;
+    background-color: var(--bg-box);
 }
 .card-body{
     display: flex;
@@ -91,17 +135,28 @@ body{
     padding: 1rem;
     /* font-size: 1rem; */
 }
+.card-body > *{
+    text-align: center;
+}
+.add{
+    width: 100%!important;
+    /* padding: 15px !important; */
+}
 .btn{
-    margin-top: 1rem;
-    background-color: #007bff;
+    /* margin-top: 1rem; */
+    background-color: var(--bg-button);
     transition: all .2s ease-out;
-    padding: 0.8rem;
+    padding: 0.8rem 0;
+    margin-bottom: 1rem;
     text-decoration: none;
     font-weight: bolder;
     color: white;
     width: 10rem;
     text-align: center;
     border-radius: 3px;
+    outline: none;
+    border: none;
+    width: 30rem;
 }
 .btn:hover{
     box-shadow: 0 0 10px #007bff;
@@ -126,12 +181,15 @@ body{
     justify-content: space-between;
     width: 30rem;
     /* border: 2px solid; */
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
 }
 .catainer-form label{
     font-size: 1.3rem;
     /* border: 2px solid; */
     text-transform: capitalize;
-    width:20rem;
+    /* width:20rem; */
     padding: 10px 0;
 }
 .catainer-form select,.catainer-form option *{
@@ -141,11 +199,14 @@ body{
     width: 10rem;
     outline: none;
     text-align: center;
-    background: red;
+    background: var(--bg);
     color: white;
     font-weight: bold;
-    padding: 10px 0;
-    border-radius: 6px;
+    cursor: pointer;
+    padding: 8px;
+    text-align: center;
+    /* border-radius: 6px; */
+    width: 100%;
 
 }
 .form-head{
@@ -179,23 +240,32 @@ h4{
 .about img {
     width: 100%;
 }
+@media only screen and (max-width: 1200px) {
+    .text{
+        width: 100%;
+        margin: 0;
+    }
+    .container{
+        margin: 0;
+    }
+}
 @media only screen and (max-width: 500px) {
    
     #navbar a,#footer a,.card-footer,.card-header,.container,.catainer-form label,.catainer-form select,.btn{
-        font-size: 12px
+        font-size: 20px
     }
     .card-footer,.card-header{
         font-size: .8rem;
 
     }
     #navbar a,#footer a{
-        font-size: 14px;
+        font-size: 15px;
         font-weight: bolder;
 
     }
     .btn{
 
-        font-size: 12px;
+        font-size: 13px;
         width: 10rem;
 
 
@@ -211,36 +281,37 @@ h4{
         flex-wrap: wrap;
 
     }
-    .catainer-form select{
-        width: 7rem;
-    }
-    #a{
-        width: 7rem;
-    }
+    
     /* .catainer-form label */
     .catainer-form label{
         width: 10rem;
     }
     .section-box{
-        width: 15rem;
+        width: 100%;
     }
     
 
+    
+      #a,.catainer-form label, .catainer-form select{
+          width: 95% !important;
+          margin: 0 auto;
+      }
+      .btn,.add{
+        width: 95% !important;
+        margin: .4rem auto;
+        font-size: 17px;
+      }
+
+}
+.none{
+    display: none;
 }
 
 @media only screen and (max-width: 300px) {
 
-    .catainer-form select{
-        width: 7rem;
-    }
-    #a{
-        width: 7rem;
-    }
-    .catainer-form label{
-        width: 7rem;
-    }
+
     .section-box{
-        width: 15rem;
+
         flex-direction: column;
         align-items: center;
         /* flex-wrap: wrap; */

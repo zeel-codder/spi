@@ -1,0 +1,65 @@
+Computer Science and Engineering-BCE
+Semester-1
+2MA101-Liner Algebra-4
+2PY101-Physics-4
+2CL102-Environment Studies-2
+2CS101-Computer Programming-4
+2EE101-EEEE-4
+2EE102-Electrical Workshop-1
+2SP101-Design Thinking-0
+2SP102-ICT Tools and Cyber Security-0
+End
+Semester-2
+2MA201-Calculus and Differential Equation-4
+2CY101-Chemistry-3
+2ME101-Engineering Graphics-4
+2HSB102-English Communication-3
+2ME102-Mechanical Workshop-1
+2XXXXX-Introduction to XX Engineering-1
+2SP103-CT-0
+2SO104-Yog and Meditation-0
+End
+Semester-3
+2CS301-Data Structures and Algorithms-4
+2CS302-Object Oriented Programming-4
+2CS303-Digital Electronics-3
+2CS304-Digital Communications-3
+2CS305-Discrete Mathematics-3
+2HS342-Principles of Economics-2
+End
+Semester-4
+2CS401-Computer Architecture-4
+2CS402-Database Management Systems-4
+2CS403-Operating Systems-4
+2CS404-Programming for Scientific Computing-3
+2MA402-Probability and Statistics-3
+2HS341-Principles of Management-2
+2CS405-Web Technologies end-2
+End
+Semester-5
+2CS501-Machine Learning-4
+2CS502-Computer Networks-4
+2CS503-Design and Analysis of Algorithms -4
+2EEDEXX-Department ElectiveI-3
+2XXOEXX-Open ElectiveI-3
+2HSOEXX-Humanities Elective-3
+End
+Semester-6
+2CS601-Theory of Computation-4
+2CSDEXX-Department ElectiveI-3
+2CSDEXX-Department ElectiveII-4
+2CSDEXX-Department ElectiveIII-3
+2XXOEXX-Open ElectiveII-3
+UEXXXXX-University Elective-3
+End
+Semester-7
+2CSXXX-Compiler Construction -4
+2CSXXX-Information Security-4
+2CSDEXX-Department ElectiveIV-3
+2CSDEXX-Department ElectiveV-3
+2XXOEXX-Open ElectiveIII-3
+2XXOEXX-Open ElectiveIV-3
+2CSXXX-Minor Project-2
+End
+Semester-8
+2CSXXX-Major Project/Internship-12
