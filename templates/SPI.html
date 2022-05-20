@@ -41,6 +41,13 @@
                 {% for data in sublist%}
                 <div class="section-box">
                     <label for='sublist'>{{data[1]}}:</label>
+                    <div class="sub_name">
+                        {% for name in data[3]%}
+                        <div>
+                            {{name}}
+                        </div>
+                        {% endfor %}
+                    </div>
                     <select id='sublist' name='sublist'>
                         <option value="AP">A+</option>
                         <option value="A">A</option>

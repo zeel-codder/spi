@@ -28,7 +28,27 @@ def Get_Branch_Semester_Sub_List(Branch,Semester):
 
     # print(list)
     if Semester in list:
-        return list[Semester]
+        l_data= list[Semester]
+        data=[]
+        for i in range(len(l_data)):
+            data.append(l_data[i].copy());
+            data[i].append(data[i][1].split("|")[1:])
+            data[i][1]=data[i][1].split("|")[0]
+        # print(list[Semester])
+        # print(data)
+        return data
+    else:
+        raise RuntimeError('Semester not found')
+    
+def Get_Branch_Semester_Sub_List_SPI(Branch,Semester):
+    list=Get_Branch_Semester_Data(Branch)
+
+    # print(list)
+    if Semester in list:
+        data=list[Semester]
+        # print(data)
+        return data
+    
     else:
         raise RuntimeError('Semester not found')
 

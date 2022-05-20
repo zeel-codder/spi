@@ -10,7 +10,6 @@ app = Flask(__name__)
 Markdown(app)
 
 
-
 @app.route("/")
 def Home():
     return render_template("Home.html")
@@ -41,6 +40,7 @@ def Semester():
     Branch=request.values.get("branch")
     Semester=request.values.get("semester")
     list_sub=d.Get_Branch_Semester_Sub_List(Branch,Semester)
+    print(list_sub)
     type='semester'
     return render_template("SPI.html",type=type,branch=Branch,semester=Semester,sublist=list_sub,action='/SPI')
 
@@ -56,8 +56,8 @@ def SPI():
     # print(sublist)
     # d=request.form.getlist('car2')
     # print(Branch,Semester)
-    list_sub=d.Get_Branch_Semester_Sub_List(Branch,Semester)
-    # print(list_sub)
+    list_sub=d.Get_Branch_Semester_Sub_List_SPI(Branch,Semester)
+    print(list_sub)
     a='Fail'
     if "F" not in Greadlist:  
         a=g.SPI(list_sub,Greadlist)
@@ -80,8 +80,12 @@ def spi_all():
         a=g.SPI(Creadit,Greadlist)
     return render_template("SPI.html",type="spi",result=a)
 
-    
+@app.errorhandler(405)
+def not_found(e):
+# defining function
+  return redirect('/')
 
+    
 
 app.run(debug=True,port=2000)
 

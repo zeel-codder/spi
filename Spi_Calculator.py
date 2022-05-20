@@ -1,7 +1,5 @@
-
-
 G_Object={
-    'AP':10,'A':9,'BP':8,'B':7,'CP':6,'C':7
+    'AP':10,'A':9,'BP':8,'B':7,'CP':6,'C':5
 }
 
 def SPI(sublist,GradeList):
