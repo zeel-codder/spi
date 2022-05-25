@@ -240,26 +240,26 @@ DATA={
       ["2CS502", "Computer Networks", "4"],
       ["2CS502", "Sofware Engineering", "4"],
       ["2CS503", "Design and Analysis of Algorithms ", "4"],
-      ["2XXOEXX", "Open ElectiveIII(Mixed Pool)|1|2|3|4|5|6", "3"],
-      ["2HSOEXX", "Humanities Elective|1|2|3|4|5|6", "3"]
+      ["2XXOEXX", "Open ElectiveIII(Mixed Pool)", "3"],
+      ["2HSOEXX", "Humanities Elective", "3"]
     ],
     "Semester-6": [
       ["2CS601", "Theory of Computation", "4"],
-      ["2CS601", "Department Elective I|1|2|3|4|5|6", "3"],
-      ["2CSDEXX", "Department ElectiveII|1|2|3|4|5|6", "4"],
-      ["2CSDEXX", "Department ElectiveIII|1|2|3|4|5|6", "3"],
-      ["2XXOEXX", "Open ElectiveI(Mixed Pool)|1|2|3|4|5|6", "3"],
-      ["2XXOEXX", "Open ElectiveII(Technical Pool)|1|2|3|4|5|6", "3"],
-      ["UEXXXXX", "University Elective|1|2|3|4|5|6", "3"]
+      ["2CS601", "Department Elective |Mobile Communications|IRS|INS|ASD|GT|ES|HPC", "3"],
+      ["2CSDEXX", "Department Elective |AJ|DL|IDS|ITC|SP|IOT|CC", "4"],
+      ["2CSDEXX", "Department Elective |LAMP|NLP|DM|SSE|DOS|ADS", "3"],
+      ["2XXOEXX", "Open Elective", "3"],
+      ["UEXXXXX", "University Elective", "3"]
     ],
     "Semester-7": [
-      ["2CSXXX", "Compiler Construction ", "4"],
-      ["2CSXXX", "Information Security", "3"],
-      ["2CSDEXX", "Department ElectiveIV|1|2|3|4|5|6", "4"],
-      ["2CSDEXX", "Department ElectiveV|1|2|3|4|5|6", "3"],
-      ["2XXOEXX", "Open ElectiveIV|1|2|3|4|5|6", "3"],
-      ["2XXOEXX", "Open ElectiveV|1|2|3|4|5|6", "3"],
-      ["2CSXXX", "Minor Project", "2"]
+      ["2CS701", "Compiler Construction ", "4"],
+      ["2CS702", "Big Data Analytics", "3"],
+      ["2CSDEXX", "Department ElectiveIV|MOS|MAP|DPA|CSF|STQA|MN|AI", "4"],
+      ["2CSDEXX", "Department ElectiveV|ADF|EH|SMM|FMSE|BT|IM", "3"],
+      ["2XXOEXX", "Open Elective |RES|RSM|ED|EM|PM|IFSE|LSCM|DECES|IA|MBF", "3"],
+      ["2XXOEXX", "Open Elective |CM|EPUS|MV|FEM|ISG|FPGA|TMES|IAE|AE", "3"],
+      ["2CSXXX", "Minor Project", "2"],
+      ["2CSXXXX", "Summer Internship", "1"]
     ],
     "Semester-8": [["2CSXXX", "Major Project/Internship", "12"]]
   }
