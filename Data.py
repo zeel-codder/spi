@@ -1,59 +1,90 @@
-import Niram_data as data
-DATA=data.DATA
+from flask import render_template, Flask, request, redirect
+from flaskext.markdown import Markdown
+import Spi_Calculator as g
+import Data as d
+
+
+app = Flask(__name__)
+Markdown(app)
+
+
+@app.route("/")
+def Home():
+    return render_template("Home.html")
+
+
+"""
+
+@app.route('/about')
+def About():
+    f1=open('./ReadMe.md',"r");
+
+    mkd_text =f1.read()
+    return render_template("about.html",mkd_text=mkd_text);
 
 
 
-def Get_Branch_List():
-    return list(DATA.keys())
-
-
-
-def Get_Branch_Semester_Data(Branch):
-    if Branch in DATA:
-        return DATA[Branch]
-    else:
-        raise RuntimeError('Branch not found')
-
-
-
-
-def Get_Branch_Semester_List(Branch='Chemical Engineering-BCH'):
-    return list(DATA[Branch].keys())
+@app.route("/branch")
+def Branch():
+    type='branch'
+    data_branch=d.Get_Branch_List()
+    data_sem=d.Get_Branch_Semester_List()
+    # jsonify(message)
+    return render_template("SPI.html",type=type,branchlist=data_branch,semlist=data_sem,action='/semester')
 
 
 
 
-def Get_Branch_Semester_Sub_List(Branch,Semester):
-    list=Get_Branch_Semester_Data(Branch)
+@app.route("/semester",methods=['POST'])
+def Semester():
+    Branch=request.values.get("branch")
+    Semester=request.values.get("semester")
+    list_sub=d.Get_Branch_Semester_Sub_List(Branch,Semester)
+    print(list_sub)
+    type='semester'
+    return render_template("SPI.html",type=type,branch=Branch,semester=Semester,sublist=list_sub,action='/SPI')
 
-    # print(list)
-    if Semester in list:
-        l_data= list[Semester]
-        data=[]
-        for i in range(len(l_data)):
-            data.append(l_data[i].copy());
-            data[i].append(data[i][1].split("|")[1:])
-            data[i][1]=data[i][1].split("|")[0]
-        # print(list[Semester])
-        # print(data)
-        return data
-    else:
-        raise RuntimeError('Semester not found')
-    
-def Get_Branch_Semester_Sub_List_SPI(Branch,Semester):
-    list=Get_Branch_Semester_Data(Branch)
-
-    # print(list)
-    if Semester in list:
-        data=list[Semester]
-        # print(data)
-        return data
-    
-    else:
-        raise RuntimeError('Semester not found')
+"""
 
 
+@app.route("/SPI", methods=["POST"])
+def SPI():
+    type = "spi"
+    # print(request.values.get('branch-sem'))
+    Branch = request.values.get("branch")
+    Semester = request.values.get("sem")
+    Greadlist = request.form.getlist("sublist")
+    # print(sublist)
+    # d=request.form.getlist('car2')
+    # print(Branch,Semester)
+    list_sub = d.Get_Branch_Semester_Sub_List_SPI(Branch, Semester)
+    print(list_sub)
+    a = "Fail"
+    if "F" not in Greadlist:
+        a = g.SPI(list_sub, Greadlist)
+    return render_template("SPI.html", type=type, result=a)
 
-if __name__=="__main__":
-    print(Get_Branch_List())
 
+@app.route("/clc")
+def Clc():
+    return render_template("ForAll.html", action="/spi_all")
+
+
+@app.route("/spi_all", methods=["POST"])
+def spi_all():
+    Greadlist = request.form.getlist("sublist")
+    Creadit = request.form.getlist("Grade")
+    print(Greadlist, Creadit)
+    a = "Fail"
+    if "F" not in Greadlist:
+        a = g.SPI(Creadit, Greadlist)
+    return render_template("SPI.html", type="spi", result=a)
+
+
+@app.errorhandler(405)
+def not_found(e):
+    # defining function
+    return redirect("/")
+
+
+# app.run(debug=True,port=2000)
